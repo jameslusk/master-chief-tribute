@@ -1,0 +1,113 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- Halo CSS -->
+    <link rel="stylesheet" type="text/css" href="halo.css">
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-giJF6kkoqNQ00vy+HMDP7azOuL0xtbfIcaT9wjKHr8RbDVddVHyTfAAsrekwKmP1" crossorigin="anonymous">
+
+    <!-- Halo JS -->
+    <script src="halo.js"></script>
+
+    <title>SoundBoard</title>
+  </head>
+  <body class="mainBody">
+
+    <nav id="navbar" class="navbar navbar-expand-lg navbar-light bg-light">
+        <div class="container-fluid" style="background-color: #4D6C47;">
+          <a class="navbar-brand" style="color:whitesmoke" href="index.html">Master Chief</a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="index.html">Home</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="bio.html">Bio</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="photos.html">Photos</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="sound.html">Sound</a>
+              </li>
+              <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                  Dropdown
+                </a>
+                <ul class="dropdown-menu" aria-labelledby="navbarDropdown" style="background-color: #4D6C47">
+                  <li><a class="dropdown-item" href="index.html">Home</a></li>
+                  <li><hr class="dropdown-divider"></li>
+                  <li><a class="dropdown-item" href="bio.html">Bio</a></li>
+                  <li><hr class="dropdown-divider"></li>
+                  <li><a class="dropdown-item" href="photos.html">Photos</a></li>
+                  <li><hr class="dropdown-divider"></li>
+                  <li><a class="dropdown-item" href="sound.html">Sound</a></li>
+                </ul>
+              </li>
+            </ul>
+            <img onclick="clickhalo()" style="width:10%; height: 10%" src="https://halo.bungie.org/misc/sloftus_iacmodel/halo-title.jpg" alt="Halo Logo">
+            <form class="d-flex" action="https://www.google.com/search" method="get">
+                <input class="form-control me-2" name="q" type="text" placeholder="Ask Google" aria-label="Search" style="width: 200px; height: 50px">
+                <button class="btn btn-outline-success" type="submit">Search</button>
+              </form>
+          </div>
+        </div>
+      </nav>
+    <h1>Halo Sound Board</h1>
+
+    <body id="soundbody">
+        
+        <audio id="sound1" src="Killtacular.mp3"></audio>
+        <audio id="sound2" src="Capture the flag.mp3"></audio>
+        <audio id="sound3" src="Double kill.mp3"></audio>
+        <audio id="sound4" src="Game over.mp3"></audio>
+        <audio id="sound5" src="Ghost.mp3"></audio>
+        <audio id="sound6" src="Killing spree.mp3"></audio>
+        <audio id="sound7" src="King of the hill.mp3"></audio>
+        <audio id="sound8" src="Oddball.mp3"></audio>
+        <audio id="sound9" src="Running riot.mp3"></audio>
+        <audio id="sound10" src="Slayer.mp3"></audio>
+        <audio id="sound11" src="Team slayer.mp3"></audio>
+        <audio id="sound12" src="Triple kill.mp3"></audio>
+
+        <div class="soundtable">
+            
+            <table>
+                <tr>
+                    <td><button onclick="document.getElementById('sound1').play()">Killtacular</button></td>
+                    <td><button onclick="document.getElementById('sound2').play()">Capture the Flag</button></td>
+                    <td><button onclick="document.getElementById('sound3').play()">Double Kill</button></td>
+                    <td><button onclick="document.getElementById('sound4').play()">Game Over</button></td>
+                </tr>
+                <tr>
+                    <td><button onclick="document.getElementById('sound5').play()">Ghost</button></td>
+                    <td><button onclick="document.getElementById('sound6').play()">Killing Spree</button></td>
+                    <td><button onclick="document.getElementById('sound7').play()">King of the Hill</button></td>
+                    <td><button onclick="document.getElementById('sound8').play()">Oddball</button></td>
+                </tr>
+                <tr>
+                    <td><button onclick="document.getElementById('sound9').play()">Running Riot</button></td>
+                    <td><button onclick="document.getElementById('sound10').play()">Slayer</button></td>
+                    <td><button onclick="document.getElementById('sound11').play()">Team Slayer</button></td>
+                    <td><button onclick="document.getElementById('sound12').play()">Triple Kill</button></td>
+                </tr>
+            </table>
+           
+        </div>
+     
+    </body>
+
+ 
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-ygbV9kiqUc6oa4msXn9868pTtWMgiQaeYH7/t7LECLbyPA2x65Kgf80OJFdroafW" crossorigin="anonymous"></script>
+
+
+  </body>
+</html>
